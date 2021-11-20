@@ -8,7 +8,7 @@ path_0 = "./data"
 filelist  = os.listdir(path_0)
 
 DataList = []
-file_test = open('/Users/jinglixin/Desktop/Datapipe/data/Luepschen2005/Rampe1.fpv.txt','r')
+file_test = open('./data/Luepschen2005/Rampe1.fpv.txt','r')
 
 for line in file_test:
     for value in line.split():
