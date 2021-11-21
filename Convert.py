@@ -18,12 +18,6 @@ NewArray1 = NewArray.reshape(110900,6)
 NewData = pd.DataFrame(NewArray1)
 NewData.columns = ['Airway flow[l/s]','Real pressure[cmH2O]','CO2-conc.[Volt]',
                    'ext.flow[l/st]','rel.Lungvol.[Volt]','Triggersignal(Insp./Exsp.)']
-NewData.to_excel('/Users/jinglixin/Desktop/Datapipe/data/A.xlsx',index=False)
+NewData.to_csv('/Users/jinglixin/Desktop/Datapipe/data/A.csv',index=False)
 
 file_test.close()
-
-
-data_xls = pd.read_excel('A.xlsx',index_col=0)
-data_xls.to_csv('A.csv',encoding='utf-8')
-
-
